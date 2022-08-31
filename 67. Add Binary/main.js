@@ -74,3 +74,14 @@ console.log(addBinary("0", "1")); // 1 = 1
 console.log(addBinary("1", "11")); // 100 = 4
 console.log(addBinary("1", "111")); // 101 = 5
 console.log(addBinary("100", "110010")); // 10101111 = 77
+
+// another sol
+console.log("------------------another sol------------------------------");
+var addBinary2 = (a, b) => (BigInt(`0B${a}`) + BigInt(`0B${b}`)).toString(2);
+console.log(addBinary2("11101011", "1"));
+console.log(addBinary2("1010", "1011"));
+console.log(addBinary2("0", "0"));
+console.log(addBinary2("0", "1"));
+console.log(addBinary2("1", "11"));
+console.log(addBinary2("1", "111"));
+console.log(addBinary2("100", "110010"));
