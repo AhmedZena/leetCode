@@ -85,3 +85,19 @@ console.log(addBinary2("0", "1"));
 console.log(addBinary2("1", "11"));
 console.log(addBinary2("1", "111"));
 console.log(addBinary2("100", "110010"));
+
+// another sol
+console.log("------------------another sol------------------------------");
+var addBinary3 = function (a, b) {
+  let aa = BigInt(`0b${a}`);
+  let bb = BigInt(`0b${b}`);
+  console.log(`0b${a} 0b${b}`);
+  console.log(aa, bb);
+
+  return (aa + bb).toString(2);
+};
+console.log(addBinary3("11101011", "1"));
+
+//trial to convert the string to binary
+let a = 5;
+console.log(a.toString(2));
